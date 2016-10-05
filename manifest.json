@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+ 
+  "name": "Hypervision : Family Group Analyser",
+  "description": "This extension will analyze family group",
+  "version": "1.0",
+ "browser_action": {
+   "default_icon": "img.png"
+   
+  },
+  
+  "permissions": [
+   "activeTab","tabs"
+   ],
+   "content_security_policy": "script-src 'self' https://connect.facebook.net/en_US/ 'unsafe-eval'",
+   "permissions": ["tabs"],
+   
+   "externally_connectable": {
+      "matches": [ "*://*.facebook.net/*" ]
+   },
+
+   "background":{
+        "scripts": ["background.js"]
+    }
+}

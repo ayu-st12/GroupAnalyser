@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+https://connect.facebook.net/
+<html>
+
+<head>
+<title>Hypervision: FaceBook Family Group Member Analyser</title>
+<meta charset="UTF-8">
+</head>
+
+<body>
+    <script src="popup.js"></script>
+    <!--
+<script type="text/javascript">
+    document.getElementById("myButton").onclick = function () {
+        location.href = "https://www.facebook.com/dialog/oauth?client_id=1617837078497452&response_type=token&scope=<PERMISSIONS>&redirect_uri=http://www.facebook.com/connect/login_success.html";
+    }; 
+</script> -->
+
+<!--
+  Below we include the Login Button social plugin. This button uses
+  the JavaScript SDK to present a graphical Login button that triggers
+  the FB.login() function when clicked.
+
+-->
+<h1 style="text-align: center">Hypervision: FaceBook Family Group Member Analyser</h1>
+    
+<br> <br>
+   
+
+    <fb:login-button scope="public_profile,email" onlogin="checkLoginState();"></fb:login-button> 
+<div id="status">
+</div>
+    
+</body>
+</html>
